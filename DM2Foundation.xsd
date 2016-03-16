@@ -5,9 +5,9 @@
 	xmlns:dc="http://purl.org/dc/elements/1.1/" targetNamespace="http://www.ideasgroup.org/dm2"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="urn:us:gov:ic:ism:v2"
-		schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IntelligenceCommunityInformationSecurityMarking.xsd"/>
+		schemaLocation="https://raw.githubusercontent.com/lonniev/cio.defense.gov.schemas.pes/v2.02c1/IntelligenceCommunityInformationSecurityMarking.xsd"/>
 	<xs:import namespace="http://www.ideasgroup.org/xsd"
-		schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IdeasFoundation.xsd"/>
+		schemaLocation="https://raw.githubusercontent.com/lonniev/cio.defense.gov.schemas.pes/v2.02c1/IdeasFoundation.xsd"/>
 	<xs:element name="InformationPedigree">
 		<xs:complexType>
 			<xs:sequence maxOccurs="unbounded">

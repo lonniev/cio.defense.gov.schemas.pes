@@ -8,13 +8,14 @@
 	xmlns:dm2="http://www.ideasgroup.org/dm2"
 	xmlns:ism="urn:us:gov:ic:ism:v2" 
 	xmlns:ideas="http://www.ideasgroup.org/xsd"
-	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://cio.defense.gov/xsd/dm2"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns="http://cio.defense.gov/xsd/dm2"
 	targetNamespace="http://cio.defense.gov/xsd/dm2" elementFormDefault="qualified"
 	attributeFormDefault="unqualified" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
 	vc:minVersion="1.1">
-	<xs:import namespace="urn:us:gov:ic:ism:v2" schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IntelligenceCommunityInformationSecurityMarking.xsd"/>
-	<xs:import namespace="http://www.ideasgroup.org/dm2" schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/DM2Foundation.xsd"/>
-	<xs:import namespace="http://www.ideasgroup.org/xsd" schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IdeasFoundation.xsd"/>
+	<xs:import namespace="urn:us:gov:ic:ism:v2" schemaLocation="https://raw.githubusercontent.com/lonniev/cio.defense.gov.schemas.pes/v2.02c1/IntelligenceCommunityInformationSecurityMarking.xsd"/>
+	<xs:import namespace="http://www.ideasgroup.org/dm2" schemaLocation="https://raw.githubusercontent.com/lonniev/cio.defense.gov.schemas.pes/v2.02c1/DM2Foundation.xsd"/>
+	<xs:import namespace="http://www.ideasgroup.org/xsd" schemaLocation="https://raw.githubusercontent.com/lonniev/cio.defense.gov.schemas.pes/v2.02c1/IdeasFoundation.xsd"/>
 	<xs:element name="IdeasEnvelope">
 		<xs:annotation>
 			<xs:documentation>The root element of an IDEAS data exchange file</xs:documentation>
