@@ -2,7 +2,7 @@
 <!DOCTYPE catalog PUBLIC "-//OASIS//DTD XML Catalogs V1.1//EN" "http://www.oasis-open.org/committees/entity/release/1.1/catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
  
-    <uri name="urn:us:gov:ic:ism:v2" uri="./IC-ISM-v2.1.xsd"/>
+    <uri name="urn:us:gov:ic:ism:v2" uri="./IntelligenceCommunityInformationSecurityMarking.xsd"/>
     <uri name="http://www.ideasgroup.org/xsd" uri="./IdeasFoundation.xsd"/>
     <uri name="http://www.ideasgroup.org/dm2" uri="./DM2Foundation.xsd"/>
     

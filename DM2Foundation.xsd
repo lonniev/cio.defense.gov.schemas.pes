@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by David M McDaniel (Silver Bullet Solutions, Inc.) -->
-<xs:schema xmlns="http://www.ideasgroup.org/dm2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism:v2" xmlns:ideas="http://www.ideasgroup.org/xsd" xmlns:dc="http://purl.org/dc/elements/1.1/" targetNamespace="http://www.ideasgroup.org/dm2" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="urn:us:gov:ic:ism:v2" schemaLocation="IC-ISM-v2.1.xsd"/>
-	<xs:import namespace="http://www.ideasgroup.org/xsd" schemaLocation="IdeasFoundation.xsd"/>
+<xs:schema xmlns="http://www.ideasgroup.org/dm2" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ism="urn:us:gov:ic:ism:v2" xmlns:ideas="http://www.ideasgroup.org/xsd"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" targetNamespace="http://www.ideasgroup.org/dm2"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="urn:us:gov:ic:ism:v2"
+		schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IntelligenceCommunityInformationSecurityMarking.xsd"/>
+	<xs:import namespace="http://www.ideasgroup.org/xsd"
+		schemaLocation="https://github.com/lonniev/cio.defense.gov.schemas.pes/IdeasFoundation.xsd"/>
 	<xs:element name="InformationPedigree">
 		<xs:complexType>
 			<xs:sequence maxOccurs="unbounded">
@@ -10,12 +15,9 @@
 					<!-- This section is generated from the model according to the IDEAS XSD production rules -->
 					<xs:element name="NamingScheme">
 						<xs:annotation>
-							<xs:documentation>An NameType and a RepresentationScheme whose members are intentionally Names. 
-
-Examples:
-
-ISO 3166 Country Codes
-IdeasNames</xs:documentation>
+							<xs:documentation>An NameType and a RepresentationScheme whose members
+								are intentionally Names. Examples: ISO 3166 Country Codes
+								IdeasNames</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -41,7 +43,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="PedigreeInformationType">
 						<xs:annotation>
-							<xs:documentation>The Powertype of PedigreeInformation.</xs:documentation>
+							<xs:documentation>The Powertype of
+								PedigreeInformation.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -55,7 +58,9 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="Activity">
 						<xs:annotation>
-							<xs:documentation>Work, not specific to a single organization, weapon system or individual that transforms inputs (Resources) into outputs (Resources) or changes their state.</xs:documentation>
+							<xs:documentation>Work, not specific to a single organization, weapon
+								system or individual that transforms inputs (Resources) into outputs
+								(Resources) or changes their state.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -68,7 +73,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="activityConsumesResource">
 						<xs:annotation>
-							<xs:documentation>Represents that an activity consumes a resource</xs:documentation>
+							<xs:documentation>Represents that an activity consumes a
+								resource</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -81,7 +87,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="activityProducesResource">
 						<xs:annotation>
-							<xs:documentation>Represents that an activity produces a resource</xs:documentation>
+							<xs:documentation>Represents that an activity produces a
+								resource</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -94,7 +101,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="ruleConstrainsActivity">
 						<xs:annotation>
-							<xs:documentation>An overlap between a Rule and the Activities it allows</xs:documentation>
+							<xs:documentation>An overlap between a Rule and the Activities it
+								allows</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -107,7 +115,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="measureOfTypeActivity">
 						<xs:annotation>
-							<xs:documentation>A measureOfType that relates an Activity to a Measure</xs:documentation>
+							<xs:documentation>A measureOfType that relates an Activity to a
+								Measure</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -120,7 +129,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="Measure">
 						<xs:annotation>
-							<xs:documentation>The magnitude of some attribute of an individual.</xs:documentation>
+							<xs:documentation>The magnitude of some attribute of an
+								individual.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -147,7 +157,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="Rule">
 						<xs:annotation>
-							<xs:documentation>A principle or condition that governs behavior; a prescribed guide for conduct or action  </xs:documentation>
+							<xs:documentation>A principle or condition that governs behavior; a
+								prescribed guide for conduct or action </xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -160,7 +171,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="MeasureTypeUnitsOfMeasure">
 						<xs:annotation>
-							<xs:documentation>The subtype of MeasureType that has units.</xs:documentation>
+							<xs:documentation>The subtype of MeasureType that has
+								units.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -174,7 +186,9 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="Performer">
 						<xs:annotation>
-							<xs:documentation>Any entity - human, automated, or any aggregation of human and/or automated - that performs an activity and provides a capability.</xs:documentation>
+							<xs:documentation>Any entity - human, automated, or any aggregation of
+								human and/or automated - that performs an activity and provides a
+								capability.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -200,11 +214,11 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="activityPerformedByPerformer">
 						<xs:annotation>
-							<xs:documentation>An overlap between a Performer and an Activity that is non-specific as to whether:
-1. the Activity is solely performed by the Performer
-2. the Activity is performed by several Performers
-3. the Performer performs only this Activity
-4. the Performer performs other Activities</xs:documentation>
+							<xs:documentation>An overlap between a Performer and an Activity that is
+								non-specific as to whether: 1. the Activity is solely performed by
+								the Performer 2. the Activity is performed by several Performers 3.
+								the Performer performs only this Activity 4. the Performer performs
+								other Activities</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -217,7 +231,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="resourceInLocationType">
 						<xs:annotation>
-							<xs:documentation>The relationship that describes the location of a performer or type of performer</xs:documentation>
+							<xs:documentation>The relationship that describes the location of a
+								performer or type of performer</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -230,7 +245,8 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="Location">
 						<xs:annotation>
-							<xs:documentation>A point or extent in space that may be referred to physically or logically.</xs:documentation>
+							<xs:documentation>A point or extent in space that may be referred to
+								physically or logically.</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>
@@ -243,14 +259,12 @@ IdeasNames</xs:documentation>
 					</xs:element>
 					<xs:element name="typeInstance">
 						<xs:annotation>
-							<xs:documentation>A couple that asserts that a Thing is a member of a Type.
-
-Examples:
-
-* I am a member of the type People (hard to believe, but true)
-* Field Marshal is of the type Rank
-* Viscount Bernard Montgomery is of the type Person
-* The state of Viscount Bernard Montgomery from 1945 to his death is of type Field Marshal</xs:documentation>
+							<xs:documentation>A couple that asserts that a Thing is a member of a
+								Type. Examples: * I am a member of the type People (hard to believe,
+								but true) * Field Marshal is of the type Rank * Viscount Bernard
+								Montgomery is of the type Person * The state of Viscount Bernard
+								Montgomery from 1945 to his death is of type Field
+								Marshal</xs:documentation>
 						</xs:annotation>
 						<xs:complexType>
 							<xs:complexContent>

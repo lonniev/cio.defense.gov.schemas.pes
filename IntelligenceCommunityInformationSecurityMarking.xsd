@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 16 March 2016: Hand altered by Lonnie VanZandt at Sodius.com -->
 <!-- **************************************************************** -->
 <!--                            UNCLASSIFIED                          -->
 <!-- **************************************************************** -->
@@ -116,7 +117,7 @@
   <!-- ************************************************************* -->
   <xsd:simpleType name="ClassificationType">
     <xsd:annotation>
-      <xsd:documentation>This simple type is used by the classificatin attribute to identify the highest level of classification of the information being encoded. It is manifested in portion marks and security banners.
+      <xsd:documentation>This simple type is used by the classification attribute to identify the highest level of classification of the information being encoded. It is manifested in portion marks and security banners.
 
 PERMISSIBLE VALUES
 
